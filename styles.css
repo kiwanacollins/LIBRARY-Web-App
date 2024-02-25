@@ -1,0 +1,138 @@
+* {
+    /* margin: 0;*/
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(116, 187, 187);
+  }
+  h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .add-book {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    padding-inline: 15px;
+    margin-top: 18px;
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(to right, #ff8c00, #1dbcc7);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  #newBookForm {
+    display: none;
+  }
+  #inner-form {
+    /*border: 3px black solid;*/
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px;
+    border-radius: 8px;
+  }
+  .btn-submit {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #display {
+    margin-top: 50px;
+  }
+  
+  .place {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 7px;
+    border: none;
+  }
+  .have {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  #check {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -30px;
+  }
+  
+  #submitt {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px;
+  }
+  ::placeholder {
+    color: #98f516;
+    opacity: 1;
+    font-size: 16px;
+  }
+
+  .book {
+    box-shadow: 0 4px 8px;
+    min-width: 300px;
+    margin-left: 10px;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+
+    
+  }
+
+  .book::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e783c9, rgb(126, 57, 57));
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+    mix-blend-mode: multiply;
+  }
+ .book-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+.button-00 {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  
+}
+
+.button-00:hover {
+  padding: 50px;
+  background: linear-gradient(to right, #ff8c00, #1dbcc7);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(10, 255, 30, 0.2);
+}

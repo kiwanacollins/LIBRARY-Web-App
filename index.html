@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>MY LIBRARY</h1>
+      <button class="add-book" id="btn-add-book">ADD NEW BOOK</button>
+
+      <div id="display">
+        <div id="newBookForm">
+          <div id="inner-form">
+            <h2>Add New Book</h2>
+            <div id="submit">
+              <form id="form">
+                <input
+                  class="place"
+                  type="text"
+                  id="author"
+                  name="author"
+                  placeholder="Title"
+                  required
+                /><br />
+
+                <input
+                  class="place"
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="author"
+                  required
+                /><br />
+
+                <input
+                  class="place"
+                  type="number"
+                  id="pages"
+                  name="pages"
+                  placeholder="Number of Pages"
+                  required
+                /><br />
+                <label for="check" class="have">Have You Read It ?</label>
+                <input type="checkbox" id="check" />
+                <div class="btn-submit">
+                  <button id="submitt" type="submit">Add Book</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
